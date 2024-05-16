@@ -48,7 +48,7 @@ const StoryCard = ({ ...props }) => {
           )}
           {time && <p className="text-sm w-2/12">{getHours(time)}</p>}
           {url && (
-            <p className="text-sm break-all whitespace-nowrap w-5/12">
+            <p className="truncate text-sm break-all whitespace-nowrap w-5/12">
               {url.split("://")[1]}
             </p>
           )}
