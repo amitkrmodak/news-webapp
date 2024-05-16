@@ -12,7 +12,7 @@ export default function Home() {
 
   const fetchData = async (offset: number) => {
     try {
-      const response = await axios.get(`${process.env.SERVER_URL}/beststories?`, {
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/beststories?`, {
         params: {
           offset: offset,
           limit,
